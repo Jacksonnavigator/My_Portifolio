@@ -15,21 +15,17 @@ Explore my work, view my CV, and check out my GitHub projects.
 """)
 
 # Download CV
-with open("Jackson_CV.pdf", "rb") as f:
+with open("CV/Jackson_CV.pdf", "rb") as f:
     st.download_button("📄 Download My CV", f, file_name="Jackson_CV.pdf")
 
 # Featured Project
 st.markdown("## 📌 Featured Project: Bird Species Identifier (Tanzania)")
 col1, col2 = st.columns([1, 1])
 with col1:
-    st.image("Screenshot_2025-05-23_09.39.52.png", caption="Prediction Output", use_column_width=True)
+    st.image("images/Screenshot_2025-05-23_09.39.52.png", caption="Prediction Output", use_container_width=True)
 with col2:
-    st.image("Screenshot_2025-05-23_09.40.11.png", caption="Detailed Bird Information", use_column_width=True)
+    st.image("images/Screenshot_2025-05-23_09.40.11.png", caption="Detailed Bird Information", use_container_width=True)
 
 st.markdown("""
 This tool uses image recognition and mapping to identify bird species and display their habitat, conservation status, and migration data — empowering Tanzanian conservation efforts.
 """)
-
-# GitHub
-st.markdown("### 🔗 Connect With Me")
-st.markdown("[GitHub Profile](https://github.com/Jacksonnavigator)")
